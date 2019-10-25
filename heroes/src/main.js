@@ -7,12 +7,12 @@ import "./style/index.css";
 import VueRouter from "vue-router"; // 引用router
 // import router from "./router.js";
 import router from "./router"; // .js 可写可不写
-import axios from "axios";
+import axios from "axios"; // 引入axios第三方包
 Vue.prototype.$axios = axios; // 将axios赋值给Vue对象的原型属性
 axios.defaults.baseURL = "http://localhost:3000"; // 设置共享的方法
 Vue.use(VueRouter); // 使用router 注册路由
 
-// 实例化Vue对象
+// 实例化 Vue对象
 new Vue({
   el: '#app',
   router,
