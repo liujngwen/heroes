@@ -12,6 +12,7 @@ Vue.prototype.$axios = axios; // 将axios赋值给Vue对象的原型属性
 axios.defaults.baseURL = "http://localhost:3000"; // 设置共享的方法
 Vue.use(VueRouter); // 使用router 注册路由
 
+// 实例化Vue对象
 new Vue({
   el: '#app',
   router,
